@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 
-LABEL maintainer "Cleidson D. Nascimento, Me."
+LABEL maintainer "Cleidson Nascimento"
 
 # Download Links:
 ENV exe "https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e7112d1/SQLServer2019-DEV-x64-ENU.exe"
