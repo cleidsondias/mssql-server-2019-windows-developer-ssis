@@ -1,4 +1,4 @@
-# mssql-server-2019-windows-developer-ssis
+# SQL Server 2019 Developer whit SSIS (Windows Container)
 This is the Dockerfile for the latest version of SQL Server Developer Edition for Windows Containers using 2019 version.
 
 ### Contents
