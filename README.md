@@ -29,7 +29,7 @@ You can run the container with the following command.
 (Note the you'll need Windows Server 2016, Windows Server 2019  or Windows 10)
 
 ````
-docker run -d -p 1433:1433 -m 2048 -v C:/temp/:C:/temp/ -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y -e attach_dbs="<DB-JSON-CONFIG>" cleidsondias/mssql-server-2019-windows-developer-ssis
+docker run -d -p 1433:1433 -v C:/temp/:C:/temp/ -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y -e attach_dbs="<DB-JSON-CONFIG>" cleidsondias/mssql-server-2019-windows-developer-ssis
 ````
 
 or
@@ -37,7 +37,7 @@ or
 if you want tun without attachament db
 
 ````
-docker run -d -p 1433:1433 -m 2048 -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y cleidsondias/mssql-server-2019-windows-developer-ssis
+docker run -d -p 1433:1433 -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y cleidsondias/mssql-server-2019-windows-developer-ssis
 ````
 
 - **-p HostPort:containerPort** is for port-mapping a container network port to a host port.
