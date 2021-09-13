@@ -32,6 +32,14 @@ You can run the container with the following command.
 docker run -d -p 1433:1433 -m 2048 -v C:/Server/:C:/Server/ -v C:/temp/:C:/temp/ -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y -e attach_dbs="<DB-JSON-CONFIG>" cleidsondias/mssql-server-2019-windows-developer-ssis
 ````
 
+or
+
+if you want tun without attachament db
+
+````
+docker run -d -p 1433:1433 -m 2048 -v C:/Server/:C:/Server/ -v C:/temp/:C:/temp/ -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y cleidsondias/mssql-server-2019-windows-developer-ssis
+````
+
 - **-p HostPort:containerPort** is for port-mapping a container network port to a host port.
 - **-v HostPath:containerPath** is for mounting a folder from the host inside the container.
 
