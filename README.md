@@ -34,10 +34,15 @@ docker run -d -p 1433:1433 -v C:/temp/:C:/temp/ -e sa_password=<YOUR SA PASSWORD
 
 or
 
-if you want tun without attachament db
+if you want run without attachament db
 
 ````
 docker run -d -p 1433:1433 -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y cleidsondias/mssql-server-2019-windows-developer-ssis
+````
+
+if you want put you database in hostmachine, add in you command:
+````
+-v C:/Server/MSSQL/Backup:C:/Server/MSSQL/Backup and -v C:/Server/MSSQL/DB
 ````
 
 - **-p HostPort:containerPort** is for port-mapping a container network port to a host port.
