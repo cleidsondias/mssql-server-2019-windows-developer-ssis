@@ -42,7 +42,7 @@ docker run -d -p 1433:1433 -e sa_password=<YOUR SA PASSWORD> -e ACCEPT_EULA=Y cl
 
 if you want put you database in hostmachine, add in you command:
 ````
--v C:/Server/MSSQL/Backup:C:/Server/MSSQL/Backup and -v C:/Server/MSSQL/DB
+-v C:/Server/MSSQL/Backup:C:/Server/MSSQL/Backup -v C:/Server/MSSQL/DB:C:/Server/MSSQL/DB
 ````
 
 - **-p HostPort:containerPort** is for port-mapping a container network port to a host port.
